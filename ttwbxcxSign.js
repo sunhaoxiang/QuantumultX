@@ -33,7 +33,7 @@ surge:本地
 
 
 
-定时 0 10 0 * * * ttwbxcxSign.js, tag=天天挖矿小程序, enabled=true
+定时 0 10 0 * * * https://raw.githubusercontent.com/sunhaoxiang/QuantumultX/master/ttwbxcxSign.js, tag=天天挖矿小程序, enabled=true
 
 
 
