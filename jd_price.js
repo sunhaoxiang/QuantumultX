@@ -165,9 +165,11 @@ function request_history_price(share_url, callback) {
             "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 - mmbWebBrowse - ios",
             "Accept": "*/*",
             "Host": "apapia-history.manmanbuy.com",
+            "Accept-Language": "zh-cn",
+            "Accept-Encoding": "gzip, deflate, br",
             "Cookie": "firsthistory12345-F563D-45E2-A23D-DDS7S5D=2020/10/26 19:51:35; jjkcpnew111=cp27268533_1246418117_2020/10/26"
         },
-        body: "methodName=getHistoryTrend&p_url=" + encodeURIComponent(share_url)
+        body: "methodName=getHistoryTrend&jsoncallback=%3F&qs=true&bj=false&jgzspic=no&callPos=trend_detail&lastprice=368&t=1603714036212&username=&u_name=&sign=&c_appver=3.4.60&c_ostype=ios&c_osver=14.1&c_devid=78205D3E-FB1D-4BE8-8A66-FFD5814C1D60&c_patch=&c_devmodel=iPhone%20XS%20Max&c_brand=Apple&c_operator=%E4%B8%AD%E5%9B%BD%E8%81%94%E9%80%9A&c_ctrl=TrendDetailScene&c_win=w_414_h_896&c_dp=1&c_safearea=44_34&c_firstchannel=AppStore&c_firstquerendate=1603713057086&c_channel=AppStore&c_test=&token=918AE5FA6A8BB871A59D3F6584892B0C&p_url=" + encodeURIComponent(share_url)
     }
     $tool.post(options, function (error, response, data) {
         if (!error) {
