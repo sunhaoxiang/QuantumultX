@@ -162,7 +162,9 @@ function request_history_price(share_url, callback) {
         url: "https://apapia-history.manmanbuy.com/ChromeWidgetServices/WidgetServices.ashx",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded;charset=utf-8",
-            "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 - mmbWebBrowse - ios",
+            "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 - mmbWebBrowse - ios",
+            "Accept": "*/*",
+            "Host": "apapia-history.manmanbuy.com",
             "Cookie": "firsthistory12345-F563D-45E2-A23D-DDS7S5D=2020/10/26 19:51:35; jjkcpnew111=cp27268533_1246418117_2020/10/26"
         },
         body: "methodName=getHistoryTrend&p_url=" + encodeURIComponent(share_url)
