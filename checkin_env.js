@@ -1,3 +1,5 @@
+const { type } = require("os");
+
 /*
 Check in for Surge by Neurogram
 
@@ -45,10 +47,6 @@ if (
   $.getdata("evil_checkintitle") != ""
 ) {
   var acc = $.getdata("evil_checkintitle");
-  var autoLogout = $.getdata("evil_autoLogout");
-  console.log('*************************************')
-  console.log(autoLogout)
-  console.log('*************************************')
   accounts = acc.split("，");
 } else {
   if ($.isNode()) {
@@ -155,7 +153,11 @@ if (
   }
 }
 
-// $.autoLogout = JSON.parse($.getdata("evil_autoLogout") || $.autoLogout);
+$.autoLogout = JSON.parse($.getdata("evil_autoLogout") || $.autoLogout);
+console.log('*************************************');
+console.log(typeof $.autoLogout);
+console.log($.autoLogout);
+console.log('*************************************');
 launch();
 
 function launch() {
@@ -197,7 +199,6 @@ function login(url, email, password, title) {
       console.log(error);
       $.msg(title + "登录失败", JSON.stringify(error), "");
     } else {
-      // $.msg('登陆成功！！', 'checkinMsg', 'flowMsg');
       if (
         JSON.parse(data).msg.match(
           /邮箱或者密码错误|Mail or password is incorrect/
