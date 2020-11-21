@@ -151,7 +151,7 @@ if (
   }
 }
 
-$.autoLogout = JSON.parse($.getdata("evil_autoLogout"));
+// $.autoLogout = JSON.parse($.getdata("evil_autoLogout"));
 console.log('*************************************')
 console.log($.getdata("evil_autoLogout"))
 console.log($.autoLogout)
@@ -165,6 +165,7 @@ function launch() {
     let email = emails[i];
     let password = passwords[i];
     if ($.autoLogout) {
+      console.log('login')
       let logoutPath =
         url.indexOf("auth/login") != -1 ? "user/logout" : "user/logout.php";
       var logouturl = {
@@ -175,6 +176,7 @@ function launch() {
         login(url, email, password, title);
       });
     } else {
+      console.log('checkin')
       checkin(url, email, password, title);
     }
   }
