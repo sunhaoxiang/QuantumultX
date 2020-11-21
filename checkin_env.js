@@ -45,6 +45,10 @@ if (
   $.getdata("evil_checkintitle") != ""
 ) {
   var acc = $.getdata("evil_checkintitle");
+  var autoLogout = $.getdata("evil_autoLogout");
+  console.log('*************************************')
+  console.log(autoLogout)
+  console.log('*************************************')
   accounts = acc.split("，");
 } else {
   if ($.isNode()) {
