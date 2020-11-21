@@ -192,7 +192,7 @@ function login(url, email, password, title) {
       console.log(error);
       $.msg(title + "登录失败", JSON.stringify(error), "");
     } else {
-      console.log('登陆成功！！')
+      $.msg('登陆成功！！', 'checkinMsg', 'flowMsg');
       if (
         JSON.parse(data).msg.match(
           /邮箱或者密码错误|Mail or password is incorrect/
