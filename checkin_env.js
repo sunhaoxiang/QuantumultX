@@ -163,9 +163,6 @@ function launch() {
     let email = emails[i];
     let password = passwords[i];
     if ($.autoLogout) {
-      console.log('*************************************');
-      console.log('login');
-      console.log('*************************************');
       let logoutPath =
         url.indexOf("auth/login") != -1 ? "user/logout" : "user/logout.php";
       var logouturl = {
@@ -176,9 +173,6 @@ function launch() {
         login(url, email, password, title);
       });
     } else {
-      console.log('*************************************');
-      console.log('login');
-      console.log('*************************************');
       checkin(url, email, password, title);
     }
   }
