@@ -151,7 +151,7 @@ if (
   }
 }
 
-$.autoLogout = JSON.parse($.getdata("evil_autoLogout") || $.autoLogout);
+// $.autoLogout = JSON.parse($.getdata("evil_autoLogout") || $.autoLogout);
 launch();
 
 function launch() {
