@@ -39,6 +39,10 @@ Modified by evilbutcher
 */
 const $ = new Env("机场签到");
 $.autoLogout = true;
+console.log('*************************************')
+console.log('start');
+console.log($.getdata("evil_autoLogout"))
+console.log('*************************************')
 
 if (
   $.getdata("evil_checkintitle") != undefined &&
