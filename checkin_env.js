@@ -151,12 +151,7 @@ if (
   }
 }
 
-console.log('*************************************')
-console.log($.getdata("evil_autoLogout"))
-console.log($.autoLogout)
-console.log($.getdata("evil_autoLogout") || $.autoLogout)
-console.log('*************************************')
-$.autoLogout = JSON.parse($.getdata("evil_autoLogout") || $.autoLogout);
+$.autoLogout = JSON.parse($.getdata("evil_autoLogout"));
 console.log('*************************************')
 console.log($.autoLogout)
 console.log('*************************************')
