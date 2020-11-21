@@ -160,7 +160,7 @@ function launch() {
     let url = urls[i];
     let email = emails[i];
     let password = passwords[i];
-    $.msg('autoLogout', autoLogout, '1234');
+    $.msg('autoLogout', $.autoLogout, '1234');
     if ($.autoLogout) {
       let logoutPath =
         url.indexOf("auth/login") != -1 ? "user/logout" : "user/logout.php";
