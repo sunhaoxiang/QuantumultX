@@ -160,6 +160,7 @@ function launch() {
     let url = urls[i];
     let email = emails[i];
     let password = passwords[i];
+    $.msg('autoLogout', autoLogout, '1234');
     if ($.autoLogout) {
       let logoutPath =
         url.indexOf("auth/login") != -1 ? "user/logout" : "user/logout.php";
@@ -192,7 +193,7 @@ function login(url, email, password, title) {
       console.log(error);
       $.msg(title + "登录失败", JSON.stringify(error), "");
     } else {
-      $.msg('登陆成功！！', 'checkinMsg', 'flowMsg');
+      // $.msg('登陆成功！！', 'checkinMsg', 'flowMsg');
       if (
         JSON.parse(data).msg.match(
           /邮箱或者密码错误|Mail or password is incorrect/
