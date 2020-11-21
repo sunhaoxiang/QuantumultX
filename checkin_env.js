@@ -1,5 +1,3 @@
-const { type } = require("os");
-
 /*
 Check in for Surge by Neurogram
 
