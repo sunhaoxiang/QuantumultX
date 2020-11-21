@@ -153,6 +153,7 @@ if (
 
 $.autoLogout = JSON.parse($.getdata("evil_autoLogout"));
 console.log('*************************************')
+console.log($.getdata("evil_autoLogout"))
 console.log($.autoLogout)
 console.log('*************************************')
 launch();
