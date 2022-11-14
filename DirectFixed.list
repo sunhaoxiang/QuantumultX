@@ -1,0 +1,38 @@
+# DirectFixed
+# > General
+HOST,app.adjust.com
+HOST,app.appsflyer.com
+HOST,bdtj.tagtic.cn
+# > Alibaba
+HOST,log.mmstat.com
+HOST,sycm.mmstat.com
+# > Google
+HOST-SUFFIX,blog.google // Google Blog
+HOST-SUFFIX,googletraveladservices.com // Google Flights
+HOST,clientservices.googleapis.com
+HOST,update.googleapis.com
+HOST,dl.google.com
+HOST,dl.l.google.com
+HOST,update.googleapis.com
+# >> Firebase Cloud Messaging
+HOST,mtalk.google.com
+HOST,alt1-mtalk.google.com
+HOST,alt2-mtalk.google.com
+HOST,alt3-mtalk.google.com
+HOST,alt4-mtalk.google.com
+HOST,alt5-mtalk.google.com
+HOST,alt6-mtalk.google.com
+HOST,alt7-mtalk.google.com
+HOST,alt8-mtalk.google.com
+# >> Paramount+
+# HOST,pubads.g.doubleclick.net
+# > Tencent
+HOST,fairplay.l.qq.com
+HOST,livew.l.qq.com
+HOST,vd.l.qq.com
+HOST,vi.l.qq.com
+# > Strava
+HOST,analytics.strava.com
+# > Umeng
+HOST,msg.umeng.com
+HOST,msg.umengcloud.com
