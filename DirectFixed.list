@@ -36,3 +36,5 @@ HOST,analytics.strava.com
 # > Umeng
 HOST,msg.umeng.com
 HOST,msg.umengcloud.com
+# > Infuse
+HOST-SUFFIX,infuse.im
