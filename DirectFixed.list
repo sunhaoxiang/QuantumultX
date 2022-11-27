@@ -38,3 +38,4 @@ HOST,msg.umeng.com
 HOST,msg.umengcloud.com
 # > Infuse
 HOST-SUFFIX,infuse.im
+HOST-SUFFIX,themoviedb.org
