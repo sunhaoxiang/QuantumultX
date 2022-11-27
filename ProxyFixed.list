@@ -1,7 +1,11 @@
 # ProxyFixed
+
+# > vercel
+HOST-SUFFIX,vercel.app
+
 # > ENET
 HOST-SUFFIX,easy2022.com
 HOST-SUFFIX,egeturl.com
 
-# Steam
+# > Steam
 HOST,steammobile.akamaized.net
